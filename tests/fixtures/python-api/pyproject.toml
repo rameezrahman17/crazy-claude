@@ -1,0 +1,10 @@
+[project]
+name = "python-api"
+version = "0.1.0"
+dependencies = [
+  "fastapi>=0.110",
+  "pydantic>=2",
+]
+
+[tool.ruff]
+line-length = 100

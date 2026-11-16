@@ -1,0 +1,60 @@
+{
+  "name": "crazy-claude",
+  "version": "1.0.0",
+  "description": "Supercharge Claude Code. Automatically. Analyzes your project and configures Claude Code with relevant plugins, MCP servers, skills, agents, hooks and CLAUDE.md.",
+  "type": "module",
+  "bin": {
+    "crazy-claude": "dist/cli/index.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.17"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && chmod +x dist/cli/index.js",
+    "dev": "tsc -p tsconfig.json --watch",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "mcp",
+    "ai",
+    "cli",
+    "developer-tools",
+    "agents",
+    "skills",
+    "plugins"
+  ],
+  "author": "Rameez Rahman",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rameezrahman17/crazy-claude.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rameezrahman17/crazy-claude/issues"
+  },
+  "homepage": "https://github.com/rameezrahman17/crazy-claude#readme",
+  "dependencies": {
+    "@clack/prompts": "^0.9.1",
+    "chalk": "^5.6.2",
+    "commander": "^12.1.0",
+    "fast-glob": "^3.3.3",
+    "ora": "^8.2.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "typescript": "^5.9.3",
+    "vitest": "^2.1.9"
+  }
+}
