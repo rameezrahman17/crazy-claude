@@ -1,5 +1,7 @@
 # Crazy Claude
 
+[![npm](https://img.shields.io/npm/v/crazy-claude.svg)](https://www.npmjs.com/package/crazy-claude) [![CI](https://github.com/rameezrahman17/crazy-claude/actions/workflows/ci.yml/badge.svg)](https://github.com/rameezrahman17/crazy-claude/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 **Supercharge Claude Code. Automatically.**
 
 Crazy Claude analyzes your project and configures [Claude Code](https://code.claude.com) with the plugins, MCP servers, skills, subagents, hooks and `CLAUDE.md` that fit **your** stack. It doesn't install everything it knows about.
